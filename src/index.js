@@ -3,11 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Layout from './route/layout';
+import LandingPage from './route/landingPage';
+import AddRecipe from './route/addRecipe';
+import RecipeDetails from './route/recipeDetails';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+
+      <Route path='/' element={<Layout />}>
+        <Route index element={<LandingPage/>}/>
+        <Route path='/add-recipe'  element={<AddRecipe/>}/>
+        <Route path='/recipe-details'  element={<RecipeDetails/>}/>
+        
+      </Route>
+    </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
