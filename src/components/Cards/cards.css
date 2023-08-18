@@ -1,0 +1,37 @@
+.cardContainer{
+    height: fit-content;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.innerCardContainer{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+}
+
+.controlContainer{
+    width: 300px;
+    padding-block: 10px;
+    /* background-color: greenyellow; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    justify-content: center;
+
+}
+
+.foodImage{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.foodName {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 700;
+}

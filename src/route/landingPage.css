@@ -1,0 +1,23 @@
+.landingPage{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5em;
+    overflow-y: auto;
+    overflow-x:  hidden;
+}
+
+.all-recipe {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-inline: 30px;
+    padding-bottom: 30px
+}
